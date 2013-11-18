@@ -15,7 +15,7 @@ def sum_list(lst):
 # PROB 3
 # Return True if x is in lst, otherwise return False.
 def appears_in_list(x, lst):
-    return False
+    return x in lst;
 
 # PROB 4
 # Return the number of unique strings in lst.
