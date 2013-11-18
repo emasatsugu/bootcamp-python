@@ -27,7 +27,11 @@ def num_unique(lst):
 # Return a new list, where the contents of the new list are lst in reverse order.
 # e.g. reverse_list([3, 2, 1]) == [1, 2, 3]
 def reverse_list(lst):
-    return []
+    newlst = []
+    for x in reversed(lst):
+        newlst.append(x)
+    return newlst;
+
 
 # PROB 6
 # Return a new list containing the elements of lst in sorted decreasing order.
