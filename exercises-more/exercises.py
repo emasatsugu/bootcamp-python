@@ -2,7 +2,7 @@
 # Return the number of words in the string s. Words are separated by spaces.
 # e.g. num_words("abc def") == 2
 def num_words(s):
-    return 0
+    return len(s.split())
 
 # PROB 2
 # Return the sum of all the numbers in lst. If lst is empty, return 0.
