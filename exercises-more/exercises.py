@@ -45,7 +45,13 @@ def sort_reverse(lst):
 # vowels (upper and lower case) removed. Vowels do not include 'y'
 # e.g. remove_vowels("abcdeABCDE") == "bcdBCD"
 def remove_vowels(s):
-    return s
+    news = s;
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    for letter in s:
+        if letter in vowels:
+            news = news.replace(letter, "")
+    return news
+
 
 # PROB 8
 # Return the longest word in the lst. If the lst is empty, return None.
