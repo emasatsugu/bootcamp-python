@@ -37,7 +37,8 @@ def reverse_list(lst):
 # Return a new list containing the elements of lst in sorted decreasing order.
 # e.g. sort_reverse([5, 7, 6, 8]) == [8, 7, 6, 5]
 def sort_reverse(lst):
-    return []
+    newlst = sorted(lst)
+    return reverse_list(newlst)
 
 # PROB 7
 # Return a new string containing the same contents of s, but with all the
