@@ -21,7 +21,7 @@ def appears_in_list(x, lst):
 # Return the number of unique strings in lst.
 # e.g. num_unique(["a", "b", "a", "c", "a"]) == 3
 def num_unique(lst):
-    return 0
+    return len(set(lst))
 
 # PROB 5
 # Return a new list, where the contents of the new list are lst in reverse order.
