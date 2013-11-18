@@ -70,7 +70,13 @@ def longest_word(lst):
 # appears in lst.
 # e.g. word_frequency(["a", "a", "aaa", "b", "b", "b"]) == {"a": 2, "aaa": 1, "b": 3}
 def word_frequency(lst):
-    return {}
+    cnt = {}
+    for word in lst:
+        if word in cnt:
+            cnt[word] += 1
+        else:
+            cnt[word] = 1
+    return cnt;
 
 # PROB 10
 # Return the tuple (word, count) for the word that appears the most frequently
